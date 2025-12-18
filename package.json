@@ -1,0 +1,27 @@
+{
+  "name": "arna-backend",
+  "version": "1.0.0",
+  "description": "Backend for Arna project",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-shamsali/Arna-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-shamsali/Arna-backend/issues"
+  },
+  "homepage": "https://github.com/dev-shamsali/Arna-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.0.2"
+  }
+}
