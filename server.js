@@ -1,10 +1,16 @@
 import dotenv from "dotenv"
 import express from "express"
 import cors from "cors"
+import cookieParser from "cookie-parser"
 import connectDB from "./config/db.config.js"
 import adminRoutes from "./routes/admin.route.js"
+
 dotenv.config()
+
 const app = express();
+
+app.use(cookieParser())
+
 app.use(cors({
     origin:[
         "http://localhost:3000",
@@ -13,6 +19,7 @@ app.use(cors({
     ],
     credentials:true,
 }))
+
 app.use(express.json());
 const PORT = process.env.PORT || 7000 
 
